@@ -16,8 +16,8 @@ const deletePersistedAuth = () => {
 
 export const getAuthHeaders = () => {
   return {
-    'X-SCB-Username': userAuth.username,
-    'X-SCB-Token': userAuth.token,
+    'X-SCB-Username': getPersistedAuth().username,
+    'X-SCB-Token': getPersistedAuth().token,
   };
 };
 
